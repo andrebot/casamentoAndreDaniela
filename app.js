@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  var dependencies = [];
+  var dependencies = ['ngMaterial',
+                      'ngRoute'];
 
   angular.module('weddingPage', dependencies);
 

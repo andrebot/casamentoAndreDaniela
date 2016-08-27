@@ -4,7 +4,9 @@
   "description": "Site for my wedding!",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "clean": "gulp clean"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,14 @@
     "angular-material": "^1.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "angular-route": "^1.5.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2"
   }
 }
