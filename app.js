@@ -2,7 +2,7 @@
   'use strict';
 
   var dependencies = ['ngMaterial',
-                      'ngRoute'];
+                      'ui.router'];
 
   angular.module('weddingPage', dependencies);
 

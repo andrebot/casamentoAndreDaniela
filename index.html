@@ -1,31 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-  <base href="/"></base>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>André & Daniela</title>
 
-  <link rel="stylesheet" href="/lib/css/angular-material.min.css">
-  <link rel="stylesheet" type="text/css" href="/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link rel="stylesheet" href="lib/css/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
 
   </head>
   <body ng-app="weddingPage">
 
-  <h1>Testeeeeee</h1>
+    <div class="page-title">
+      <div>
+        <span>Andre & Daniela</span>
+      </div>
+      <div layout="row" layout-align="center center" class="date-holder">
+        <div class="dash"></div>
+        <div class="the-date">28/04/2017</div>
+        <div class="dash"></div>
+      </div>
+    </div>
+
+    <div ng-cloak>
+  <md-content>
+    <md-tabs md-dynamic-height md-border-bottom md-center-tabs>
+      <md-tab label="Home">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Home</h1>
+          <p>ali.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="O Casal">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">O Casal</h1>
+          <p>epa</p>
+          <p>opa</p>
+          <p>aleluia</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Padrinhos">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Padrinhos</h1>
+          <p>nao pode se</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="O Dia">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">O Dia</h1>
+          <p>nao pode se</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Presentes">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Presentes</h1>
+          <p>nao pode se</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
 
     <main>
         <div ui-view></div>
     </main>
 
     <!-- Libraries -->
-    <script src="/lib/js/angular.min.js"></script>
-    <script src="/lib/js/angular-animate.min.js"></script>
-    <script src="/lib/js/angular-aria.min.js"></script>
-    <script src="/lib/js/angular-material.min.js"></script>
+    <script src="lib/js/angular.min.js"></script>
+    <script src="lib/js/angular-animate.min.js"></script>
+    <script src="lib/js/angular-aria.min.js"></script>
+    <script src="lib/js/angular-material.min.js"></script>
+    <script src="lib/js/angular-ui-router.min.js"></script>
 
     <!-- App source -->
-    <script src="/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
