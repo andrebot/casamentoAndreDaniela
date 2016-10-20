@@ -13,6 +13,7 @@ gulp.task('build', function (cb) {
                'copy:css',
                'copy:html',
                'copy:fonts',
+               'copy:imgs',
                'build:js',
                'build:css'], cb);
 });

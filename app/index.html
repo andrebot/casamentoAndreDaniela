@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>André & Daniela</title>
+    <title>André & Daniela</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-  <link rel="stylesheet" href="lib/css/angular-material.min.css">
-  <link rel="stylesheet" type="text/css" href="app.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
   </head>
   <body ng-app="weddingPage">
 
@@ -25,43 +25,72 @@
     </div>
 
     <div ng-cloak>
-  <md-content>
-    <md-tabs md-dynamic-height md-border-bottom md-center-tabs>
-      <md-tab label="Home">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Home</h1>
-          <p>ali.</p>
-        </md-content>
-      </md-tab>
-      <md-tab label="O Casal">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">O Casal</h1>
-          <p>epa</p>
-          <p>opa</p>
-          <p>aleluia</p>
-        </md-content>
-      </md-tab>
-      <md-tab label="Padrinhos">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Padrinhos</h1>
-          <p>nao pode se</p>
-        </md-content>
-      </md-tab>
-      <md-tab label="O Dia">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">O Dia</h1>
-          <p>nao pode se</p>
-        </md-content>
-      </md-tab>
-      <md-tab label="Presentes">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Presentes</h1>
-          <p>nao pode se</p>
-        </md-content>
-      </md-tab>
-    </md-tabs>
-  </md-content>
-</div>
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom md-center-tabs>
+          <md-tab label="Home">
+            <md-content class="md-padding no-background">
+
+              <md-card>
+                <md-card-title>
+                  <md-card-title-text>
+                    <span class="md-headline">Bem Vindo!</span>
+                  </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                  <div layout="row" layout-align="center center">
+                    <div flex class="left-name">
+                      <p>Andre</p>
+                      <p>Almeida</p>
+                    </div>
+                    <div flex="none">
+                      <div class="photo-frame">
+                        <div class="photo-holder"></div>
+                      </div>
+                    </div>
+                    <div flex class="right-name">
+                      <p>Daniela</p>
+                      <p>Rodrigues</p>
+                    </div>
+                  </div>
+                  <p>
+                    Então, esse somos nois! Ahahahaha, lindos né? Pois é, decidimos casar, e esse aqui é nosso site. Estamos bastante
+                    ansiosos para o nosso dia especial, e estamos mais do que felizes em poder celebrar esse dia com todas essas pessoas
+                    especiais!
+                  </p>
+                </md-card-content>
+              </md-card>
+
+            </md-content>
+          </md-tab>
+          <md-tab label="Casal">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">O Casal</h1>
+              <p>epa</p>
+              <p>opa</p>
+              <p>aleluia</p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Padrinhos">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">Padrinhos</h1>
+              <p>nao pode se</p>
+            </md-content>
+          </md-tab>
+          <md-tab label="O Dia">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">O Dia</h1>
+              <p>nao pode se</p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Presentes">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">Presentes</h1>
+              <p>nao pode se</p>
+            </md-content>
+          </md-tab>
+        </md-tabs>
+      </md-content>
+    </div>
 
     <main>
         <div ui-view></div>

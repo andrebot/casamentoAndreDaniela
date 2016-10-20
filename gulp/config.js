@@ -10,6 +10,7 @@ module.exports = {
     'node_modules/angular-material/angular-material.min.css'
   ],
   appFontsLibPaths: 'app/fonts/*',
+  appImagePath: 'app/imgs/*',
   cssPath: 'app/css/*.css',
   appHTMLPaths: 'app/**/*.html',
   indexPath: 'app/index.html',
