@@ -5,23 +5,27 @@ body {
 .page-title {
   text-align: center;
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Tangerine', cursive;
 }
 
+.tab-title {
+  margin: auto;
+}
+
 .the-date {
-  font-size: 25px;
+  font-size: 30px;
   margin: 0 15px;
 }
 
 .dash {
   border-bottom: #4caf50 solid 1px;
   height: 5px;
-  width: 50px;
+  width: 65px;
 }
 
 .date-holder {
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
 
 .no-background {
@@ -38,20 +42,66 @@ body {
 }
 
 .photo-frame .photo-holder {
-  background: #ffffff url(imgs/dani_andre_metlife_2.jpg) no-repeat;
-  background-position: 20%;
   border-radius: 50%;
   height: 120px;
   width: 120px;
+}
+
+.photo-frame .photo-holder.dani-andre {
+  background: #ffffff url(imgs/dani_andre_metlife_2.jpg) no-repeat;
+  background-position: 20%;
   background-size: 210px;
 }
 
 .left-name {
   text-align: right;
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .right-name {
   text-align: left;
-    padding-left: 10px;
+  padding-left: 10px;
+}
+
+.first-name {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+.last-name {
+  margin-top: 0px;
+}
+
+.first-home-paragraph {
+  margin-top: 26px;
+}
+
+.photo-frame-small {
+  height: 100px;
+  width: 100px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #888888;
+}
+
+.photo-frame-small .photo-holder-small {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.photo-frame-small .photo-holder-small.chediack {
+  background: #ffffff url(imgs/chediack.JPG) no-repeat;
+  background-position: 80%;
+  background-size: 210px;
+}
+
+.text-right {
+  padding-left: 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px
 }
