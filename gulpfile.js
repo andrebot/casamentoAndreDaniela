@@ -20,5 +20,5 @@ gulp.task('build', function (cb) {
 });
 
 gulp.task('clean', function (cb) {
-  runSequence(['clean:lib', 'clean:js', 'clean:html', 'clean:img']);
+  runSequence(['clean:lib', 'clean:js', 'clean:html', 'clean:img'], cb);
 });
