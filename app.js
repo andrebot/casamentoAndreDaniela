@@ -115,6 +115,11 @@
       description: defaultText,
       class: 'paolo',
       rightAligned: false
+    },{
+      name: 'Gabriela Caldeira',
+      description: defaultText,
+      class: 'gabi',
+      rightAligned: true
     }];
     
   }

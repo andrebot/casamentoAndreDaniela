@@ -85,6 +85,12 @@
   background-size: 135px;
 }
 
+.photo-frame-small .photo-holder-small.gabi {
+  background: #ffffff url(imgs/gabriela.JPG) no-repeat;
+  background-position: 0 0;
+  background-size: 100px;
+}
+
 .text-right {
   padding-left: 10px;
 }
