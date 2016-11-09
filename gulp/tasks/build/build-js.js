@@ -1,10 +1,10 @@
 'use strict';
 
-let ngAnnotate = require('gulp-ng-annotate');
-let config = require('../../config');
-let concat = require('gulp-concat');
-let uglify = require('gulp-uglify');
-let gulp = require('gulp');
+const ngAnnotate = require('gulp-ng-annotate');
+const config = require('../../config');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const gulp = require('gulp');
 
 gulp.task('build:js', function () {
   return gulp.src([config.initPath, config.jsPath])

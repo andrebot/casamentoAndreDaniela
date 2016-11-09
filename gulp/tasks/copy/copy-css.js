@@ -1,7 +1,7 @@
 'use strict';
 
-var config = require('../../config');
-var gulp   = require('gulp');
+const config = require('../../config');
+const gulp   = require('gulp');
 
 gulp.task('copy:css', function () {
   return gulp.src(config.appCSSLibPaths)

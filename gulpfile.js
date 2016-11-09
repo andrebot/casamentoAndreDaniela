@@ -8,7 +8,8 @@ requireDir('./gulp/tasks', {recurse: true});
 gulp.task('build', function (cb) {
   runSequence(['clean:lib',
                'clean:js',
-               'clean:html'],
+               'clean:html',
+               'clean:img'],
               ['copy:js',
                'copy:css',
                'copy:html',
@@ -19,5 +20,5 @@ gulp.task('build', function (cb) {
 });
 
 gulp.task('clean', function (cb) {
-  runSequence(['clean:lib', 'clean:js', 'clean:html']);
+  runSequence(['clean:lib', 'clean:js', 'clean:html', 'clean:img']);
 });

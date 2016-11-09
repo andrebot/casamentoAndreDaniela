@@ -1,7 +1,7 @@
 'use strict';
 
-let config = require('../../config');
-let gulp = require('gulp');
+const config = require('../../config');
+const gulp = require('gulp');
 
 gulp.task('copy:fonts', function () {
   return gulp.src(config.appFontsLibPaths)

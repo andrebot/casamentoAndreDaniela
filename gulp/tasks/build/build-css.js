@@ -1,9 +1,9 @@
 
 'use strict';
 
-let config = require('../../config');
-let concat = require('gulp-concat');
-let gulp = require('gulp');
+const config = require('../../config');
+const concat = require('gulp-concat');
+const gulp = require('gulp');
 
 gulp.task('build:css', function () {
   return gulp.src(config.cssPath)
