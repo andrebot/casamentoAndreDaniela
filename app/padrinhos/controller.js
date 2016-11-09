@@ -17,7 +17,7 @@
       class: 'paula-thi',
       rightAligned: false
     },{
-      name: 'Kathy e Rafael',
+      name: 'Kathy Prates e Rafael Manso',
       description: defaultText,
       class: 'katy-rafael',
       rightAligned: true
@@ -27,7 +27,7 @@
       class: 'leo-li',
       rightAligned: false
     },{
-      name: 'Tiago e Mayte',
+      name: 'Thiago Dutra e Mayte Balarini',
       description: defaultText,
       class: 'tiago-mayte',
       rightAligned: true
@@ -47,7 +47,7 @@
       class: 'anna',
       rightAligned: false
     },{
-      name: 'Patricia',
+      name: 'Patricia Rodrigues',
       description: defaultText,
       class: 'patricia',
       rightAligned: true
@@ -57,7 +57,7 @@
       class: 'phelps',
       rightAligned: false
     },{
-      name: 'Samara',
+      name: 'Samara Horta',
       description: defaultText,
       class: 'samara',
       rightAligned: true
