@@ -71,3 +71,12 @@
 .first-home-paragraph {
   margin-top: 26px;
 }
+
+.brasao {
+  background: #ffffff url(imgs/brasao.png) no-repeat;
+  background-position: 1px 15px;
+  background-size: 50px;
+  width: 50px;
+  height: 65px;
+  margin: 10px 10px 20px 10px;
+}
