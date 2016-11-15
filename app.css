@@ -1,3 +1,94 @@
+.timeline-frame-small {
+  height: 20px;
+  width: 20px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #888888;
+}
+
+.time-line {
+  background-color: #E8E8E8;
+  width: 2px;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+}
+
+.timeline-text {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+  text-align: justify;
+}
+
+/*.timeline-text:after {
+  position: relative;
+  top: -47px;
+  right: 197px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 0px solid #fff;
+  border-right: 15px solid #fff;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline-text:before {
+  position: relative;
+  top: 25px;
+  right: 25px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 0px solid #D8D8D8;
+  border-right: 15px solid #D8D8D8;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}*/
+
+.timeline-bullet-holder {
+  position: relative;
+}
+
+.photo-frame-small .photo-holder-small.vinicius {
+  background: #ffffff url(imgs/vinicius.jpg) no-repeat;
+  background-position: 80%;
+  background-size: 250px;
+}
+
+.photo-frame-small .photo-holder-small.stone {
+  background: #ffffff url(imgs/stone.jpg) no-repeat;
+  background-position: 37%;
+  background-size: 250px;
+}
+
+.photo-frame-small .photo-holder-small.dani-andre-kungfu {
+  background: #ffffff url(imgs/dani-andre-kungfu.jpg) no-repeat;
+  background-position: 20%;
+  background-size: 135px;
+}
+
+.photo-frame-small .photo-holder-small.garagem-caza {
+  background: #ffffff url(imgs/garagem-caza.jpg) no-repeat;
+  background-position: 20%;
+  background-size: 135px;
+}
+
+.photo-frame-small .photo-holder-small.dani-lego {
+  background: #ffffff url(imgs/dani-lego.jpg) no-repeat;
+  background-position: 55%;
+  background-size: 200px;
+}
+
+.photo-frame-small .photo-holder-small.pedido-casamento {
+  background: #ffffff url(imgs/pedido-casamento.jpg) no-repeat;
+  background-position: 55%;
+  background-size: 200px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 body {
   font-family: 'Alice', serif;
 }

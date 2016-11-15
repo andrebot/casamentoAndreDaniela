@@ -29,6 +29,19 @@
         }
       }
     })
+    .state('index.casal', {
+      url: 'casal',
+      data: {
+        'selectedTab': 1
+      },
+      views: {
+        'casal': {
+          controller: 'casalController',
+          controllerAs: 'vm',
+          templateUrl: 'views/casal.html'
+        }
+      }
+    })
   }
 
 })();
