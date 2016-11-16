@@ -27,13 +27,13 @@
     }
   
     vm.marcos = [{
-      text: 'Pois bem, tudo começou, por incrível que pareça, em uma aula de Kung Fu. Ambos são alunos do instrutor Fábio Lana, que dava aula na academia Tropical, no Coração Eucarístico, e na academia Body Art, no Santa Lúcia. Um dia o André foi fazer um treino na academia Tropical e assim o casal se conheceu.',
+      text: 'Pois bem, tudo começou, por incrível que pareça, em uma aula de Kung Fu. Ambos são alunos do mesmo instrutor, que dava aula na academia Tropical, no Coração Eucarístico, e na academia Body Art, no Santa Lúcia. Um dia o André foi fazer um treino na academia Tropical e assim o casal se conheceu.',
       title: 'Onde Tudo Começou',
       class: 'dani-andre-kungfu',
       isRight: true,
       isLeft: false,
     },{
-      text: 'Tempo vai, tempo vem e eles continuaram a se encontrar, mas por causa de encontros feitos pela própria turma de Kung Fu. Houve bares, partidas de Rock Band na casa do Leandro, seminário de Tui Na... houve até um incidente em um sítio onde André recitou uma cantada ridícula para a Daniela. Podemos parafrasea-la aqui: "Asa de morcego, asa de galinha, se você quiser ficar comigo, da uma risadinha!". Não preciso dizer que não rolou nada nesse dia, ainda mais com essa canta. Mas a Daniela deu sim uma risadinha!',
+      text: 'Tempo vai, tempo vem e eles continuaram a se encontrar, mas por causa de encontros feitos pela própria turma de Kung Fu. Houve bares, partidas de Rock Band na casa do Leandro, seminário de Tui Na... houve até um incidente em um sítio onde André recitou uma cantada ridícula para a Daniela. Podemos parafrasea-la aqui: "Asa de morcego, asa de galinha, se você quiser ficar comigo, da uma risadinha!". Não preciso dizer que não rolou nada nesse dia, ainda mais com essa cantada. Mas a Daniela deu sim uma risadinha!',
       title: 'Apenas Amigos',
       class: 'stone',
       isRight: false,
@@ -57,7 +57,7 @@
       isRight: true,
       isLeft: false,
     },{
-      text: 'Quatro anos se passaram. Pois é, quatro anos. Foi muito rápido! Mas flizmente os dois ainda estavam bem enamorados. Por conta disso, André começa a bolar um plano. Em dezembro de 2015 ele começa a arquitetar a noite que iria mudar a vida do casal. Aproveitado de suas fantáticas habilidades de programador, André cria um site para que Daniela. Mas não um site qualquer. Era um jogo! André, junto com os amigos mais próximos de Daniela e os pais dela, bolaram uma gincana, onde Daniela tinha que seguir pistas que estavam no site e desvendar charadas para conseguir seguir para a próxima etapa. Ele tinha planejado tudo cuidadosamente, para com que Daniela passa-se um dia inteiro brincando. Então, quando o dia 2 de Maio de 2016 chegou, no aniversário de namoro do casal, André acorda cedo, liga para Daniela e a brincadeira começa! É claro, como os mais astustos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas! Ahahahaha, e lá se vai parte do planejamento do André. Mas tudo bem, ainda sim ela se divertiu. E no final da brincadeira, Daniela recebe um aviso de que seu namorado iria leva-la para jantar. Sem saber, André a leva para o restaurante onde o casal teve seu primeiro encontro, e lá a pede em casamento! Culminando nesse exato momento. Levando você a ler este site e à esperada data 28 de Abril de 2017',
+      text: 'Quatro anos se passaram. Pois é, quatro anos. Foi muito rápido! Mas flizmente os dois ainda estavam bem enamorados. Por conta disso, André começa a bolar um plano. Em dezembro de 2015 ele começa a arquitetar a noite que iria mudar a vida do casal. Aproveitado de suas fantáticas habilidades de programador, André cria um site para que Daniela. Mas não um site qualquer. Era um jogo! André, junto com os amigos mais próximos de Daniela e os pais dela, bolaram uma gincana, onde Daniela tinha que seguir pistas que estavam no site e desvendar charadas para conseguir seguir para a próxima etapa. Ele tinha planejado tudo cuidadosamente, para com que Daniela passasse um dia inteiro brincando. Então, quando o dia 2 de Maio de 2016 chegou, no aniversário de namoro do casal, André acorda cedo, liga para Daniela e a brincadeira começa! É claro, como os mais astustos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas! Ahahahaha, e lá se vai parte do planejamento do André. Mas tudo bem, ainda sim ela se divertiu. E no final da brincadeira, Daniela recebe um aviso de que seu namorado iria leva-la para jantar. Sem saber, André a leva para o restaurante onde o casal teve seu primeiro encontro, e lá a pede em casamento! Culminando nesse exato momento. Levando você a ler este site e à esperada data 28 de Abril de 2017',
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: false,
