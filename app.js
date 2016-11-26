@@ -9,6 +9,14 @@
     .config(weddingPageConfig);
 
   function weddingPageConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
+    var apiKey = 'AIzaSyB_dMEBT5lOT8BQlaPA5HRez0ZMWQln_3s';
+    var databaseURL = 'https://weddingsite-a7b7e.firebaseio.com';
+
+    firebase.initializeApp({
+      apiKey,
+      databaseURL
+    });
+
     $urlRouterProvider.otherwise('/');
 
     $stateProvider.state('index', {
@@ -16,6 +24,19 @@
       controller: 'indexController',
       controllerAs: 'vm',
       templateUrl: 'views/index.html'
+    })
+    .state('index.historia', {
+      url: 'historia',
+      data: {
+        'selectedTab': 1
+      },
+      views: {
+        'historia': {
+          controller: 'historiaController',
+          controllerAs: 'vm',
+          templateUrl: 'views/historia.html'
+        }
+      }
     })
     .state('index.padrinhos', {
       url: 'padrinhos',
@@ -30,29 +51,49 @@
         }
       }
     })
-    .state('index.casal', {
-      url: 'casal',
+    .state('index.rspv', {
+      url: 'rspv',
       data: {
-        'selectedTab': 1
+        'selectedTab': 4
       },
       views: {
-        'casal': {
-          controller: 'casalController',
+        'rspv': {
+          controller: 'RSPVController',
           controllerAs: 'vm',
-          templateUrl: 'views/casal.html'
+          templateUrl: 'views/rspv.html'
         }
       }
-    })
+    });
   }
 
 })();
 
 (function () {
-  CasalController.$inject = ["$mdDialog"];
   angular.module('weddingPage')
-         .controller('casalController', CasalController);
+         .controller('RSPVController', RSPVController);
 
-  function CasalController ($mdDialog) {
+  function RSPVController () {
+    var vm = this;
+
+    vm.convidado = {
+      nome: '',
+      email: '',
+      pessoas: 0
+    };
+
+    vm.submit = function () {
+      var fireRef = firebase.database().ref();
+
+      fireRef.push().set(vm.convidado);
+    }
+  }
+})();
+(function () {
+  HistoriaController.$inject = ["$mdDialog"];
+  angular.module('weddingPage')
+         .controller('historiaController', HistoriaController);
+
+  function HistoriaController ($mdDialog) {
     var vm = this;
     vm.showAlert = function (event, index) {
       var marco = vm.marcos[index];
@@ -107,11 +148,17 @@
       isRight: true,
       isLeft: false,
     },{
-      text: 'Quatro anos se passaram. Pois é, quatro anos. Foi muito rápido! Mas flizmente os dois ainda estavam bem enamorados. Por conta disso, André começa a bolar um plano. Em dezembro de 2015 ele começa a arquitetar a noite que iria mudar a vida do casal. Aproveitado de suas fantáticas habilidades de programador, André cria um site para que Daniela. Mas não um site qualquer. Era um jogo! André, junto com os amigos mais próximos de Daniela e os pais dela, bolaram uma gincana, onde Daniela tinha que seguir pistas que estavam no site e desvendar charadas para conseguir seguir para a próxima etapa. Ele tinha planejado tudo cuidadosamente, para com que Daniela passasse um dia inteiro brincando. Então, quando o dia 2 de Maio de 2016 chegou, no aniversário de namoro do casal, André acorda cedo, liga para Daniela e a brincadeira começa! É claro, como os mais astustos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas! Ahahahaha, e lá se vai parte do planejamento do André. Mas tudo bem, ainda sim ela se divertiu. E no final da brincadeira, Daniela recebe um aviso de que seu namorado iria leva-la para jantar. Sem saber, André a leva para o restaurante onde o casal teve seu primeiro encontro, e lá a pede em casamento! Culminando nesse exato momento. Levando você a ler este site e à esperada data 28 de Abril de 2017',
+      text: 'Quatro anos se passaram. Pois é, quatro anos. Foi muito rápido! Mas flizmente os dois ainda estavam bem enamorados. Por conta disso, André começa a bolar um plano. Em dezembro de 2015 ele começa a arquitetar a noite que iria mudar a vida do casal. Aproveitado de suas fantáticas habilidades de programador, André cria um site para que Daniela. Mas não um site qualquer. Era um jogo! André, junto com os amigos mais próximos de Daniela e os pais dela, bolaram uma gincana, onde Daniela tinha que seguir pistas que estavam no site e desvendar charadas para conseguir seguir para a próxima etapa. Ele tinha planejado tudo cuidadosamente, para com que Daniela passasse um dia inteiro brincando. Então, quando o dia 2 de Maio de 2016 chegou, no aniversário de namoro do casal, André acorda cedo, liga para Daniela e a brincadeira começa! É claro, como os mais astustos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas! Ahahahaha, e lá se vai parte do planejamento do André. Mas tudo bem, ainda sim ela se divertiu. E no final da brincadeira, Daniela recebe um aviso de que seu namorado iria leva-la para jantar. Sem saber, André a leva para o restaurante onde o casal teve seu primeiro encontro, e lá a pede em casamento!',
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: false,
       isLeft: true,
+    }, {
+      text: 'Culminando nesse exato momento. Levando você a ler este site e à esperada data 28 de Abril de 2017. Celebraremos nosso casamento na Paróquia Santo Inácio de Loyola, no bairro Cidade Jardim.',
+      title: 'O Dia',
+      class: 'igreja',
+      isRight: true,
+      isLeft: false
     }];
   }
 })();

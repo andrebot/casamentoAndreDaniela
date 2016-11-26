@@ -8,6 +8,14 @@
     .config(weddingPageConfig);
 
   function weddingPageConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
+    var apiKey = 'AIzaSyB_dMEBT5lOT8BQlaPA5HRez0ZMWQln_3s';
+    var databaseURL = 'https://weddingsite-a7b7e.firebaseio.com';
+
+    firebase.initializeApp({
+      apiKey,
+      databaseURL
+    });
+
     $urlRouterProvider.otherwise('/');
 
     $stateProvider.state('index', {
@@ -15,6 +23,19 @@
       controller: 'indexController',
       controllerAs: 'vm',
       templateUrl: 'views/index.html'
+    })
+    .state('index.historia', {
+      url: 'historia',
+      data: {
+        'selectedTab': 1
+      },
+      views: {
+        'historia': {
+          controller: 'historiaController',
+          controllerAs: 'vm',
+          templateUrl: 'views/historia.html'
+        }
+      }
     })
     .state('index.padrinhos', {
       url: 'padrinhos',
@@ -29,19 +50,19 @@
         }
       }
     })
-    .state('index.casal', {
-      url: 'casal',
+    .state('index.rspv', {
+      url: 'rspv',
       data: {
-        'selectedTab': 1
+        'selectedTab': 4
       },
       views: {
-        'casal': {
-          controller: 'casalController',
+        'rspv': {
+          controller: 'RSPVController',
           controllerAs: 'vm',
-          templateUrl: 'views/casal.html'
+          templateUrl: 'views/rspv.html'
         }
       }
-    })
+    });
   }
 
 })();

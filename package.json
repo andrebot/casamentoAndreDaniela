@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "clean": "gulp clean",
-    "start": "http-server"
+    "start": "gulp clean && gulp build && http-server"
   },
   "repository": {
     "type": "git",

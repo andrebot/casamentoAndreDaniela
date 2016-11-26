@@ -1,0 +1,31 @@
+<md-content class="md-padding">
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline tab-title">Confirme Sua Presença</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <form name="rspvForm" ng-submit="vm.submit()">
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Nome Conforme Convite:</label>
+            <input ng-model="vm.convidado.nome">
+          </md-input-container>
+
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>E-mail:</label>
+            <input ng-model="vm.convidado.email">
+          </md-input-container>
+
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Número de Pessoas:</label>
+            <input ng-model="vm.convidado.pessoas">
+          </md-input-container>
+        </div>
+
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </md-card-content>
+  </md-card>
+</md-content>

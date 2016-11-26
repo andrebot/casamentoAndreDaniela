@@ -1,3 +1,8 @@
+
+body {
+  font-family: 'Alice', serif;
+}
+
 .timeline-frame-small {
   height: 20px;
   width: 20px;
@@ -89,8 +94,10 @@
   transform: rotate(90deg);
 }
 
-body {
-  font-family: 'Alice', serif;
+.photo-frame-small .photo-holder-small.igreja {
+  background: #ffffff url(imgs/igreja.jpg) no-repeat;
+  background-position: 55%;
+  background-size: 200px;
 }
 
 .page-title {
