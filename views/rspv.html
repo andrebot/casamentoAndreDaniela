@@ -6,25 +6,34 @@
       </md-card-title-text>
     </md-card-title>
     <md-card-content>
-      <form name="rspvForm" ng-submit="vm.submit()">
+      <form name="vm.rspvForm" ng-submit="vm.rspvForm.$valid && vm.submit()" novalidate>
         <div layout-gt-sm="row">
           <md-input-container class="md-block" flex-gt-sm>
             <label>Nome Conforme Convite:</label>
-            <input ng-model="vm.convidado.nome">
+            <input ng-model="vm.convidado.nome" name="nome" required>
+            <div ng-messages="vm.rspvForm.nome.$error">
+              <div ng-message="required">Por favor, não deixe o campo vazio.</div>
+            </div>
           </md-input-container>
 
           <md-input-container class="md-block" flex-gt-sm>
             <label>E-mail:</label>
-            <input ng-model="vm.convidado.email">
+            <input ng-model="vm.convidado.email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            <div ng-messages="vm.rspvForm.email.$error">
+              <div ng-message="required">Por favor, não deixe o campo vazio.</div>
+              <div ng-message="pattern">Formato do email invalido. Gentileza verificar.</div>
+            </div>
           </md-input-container>
 
           <md-input-container class="md-block" flex-gt-sm>
             <label>Número de Pessoas:</label>
-            <input ng-model="vm.convidado.pessoas">
+            <input ng-model="vm.convidado.pessoas" required min="0">
           </md-input-container>
         </div>
-
-        <input type="submit" id="submit" value="Submit" />
+        <div style="float: right">
+          <md-icon md-svg-icon="social:android" aria-label="android "></md-icon>
+          <md-button class="md-primary" type="submit">Submit</md-button>
+        </div>
       </form>
     </md-card-content>
   </md-card>

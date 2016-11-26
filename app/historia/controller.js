@@ -27,13 +27,13 @@
     }
   
     vm.marcos = [{
-      text: 'Pois bem, tudo começou, por incrível que pareça, em uma aula de Kung Fu. Ambos são alunos do mesmo instrutor, que dava aula na academia Tropical, no Coração Eucarístico, e na academia Body Art, no Santa Lúcia. Um dia o André foi fazer um treino na academia Tropical e assim o casal se conheceu.',
+      text: 'Tudo começou, por incrível que pareça, em uma aula de Kung Fu, arte marcial que ambos praticam há aproximadamente 8 anos. Um dia o André foi fazer um treino na academia onde Daniela treinava e assim o casal se conheceu.',
       title: 'Onde Tudo Começou',
       class: 'dani-andre-kungfu',
       isRight: true,
       isLeft: false,
     },{
-      text: 'Tempo vai, tempo vem e eles continuaram a se encontrar, mas por causa de encontros feitos pela própria turma de Kung Fu. Houve bares, partidas de Rock Band na casa do Leandro, seminário de Tui Na... houve até um incidente em um sítio onde André recitou uma cantada ridícula para a Daniela. Podemos parafrasea-la aqui: "Asa de morcego, asa de galinha, se você quiser ficar comigo, da uma risadinha!". Não preciso dizer que não rolou nada nesse dia, ainda mais com essa cantada. Mas a Daniela deu sim uma risadinha!',
+      text: 'O tempo passou e eles continuaram a se encontrar em alguns eventos realizados pela escola na qual treinavam e também em encontros organizados pela turma de Kung Fu: bares, partidas de Rock Band, seminários... houve até um incidente em um sítio onde André recitou uma cantada ridícula para a Daniela - ver link - e que, apesar de não ter rolado nada naquele dia (ainda mais com essa cantada!) no fundo, no fundo, funcionou!',
       title: 'Apenas Amigos',
       class: 'stone',
       isRight: false,

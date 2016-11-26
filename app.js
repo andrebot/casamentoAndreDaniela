@@ -3,6 +3,7 @@
 
   weddingPageConfig.$inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"];
   var dependencies = ['ngMaterial',
+                      'ngMessages',
                       'ui.router'];
 
   angular.module('weddingPage', dependencies)
@@ -84,7 +85,11 @@
     vm.submit = function () {
       var fireRef = firebase.database().ref();
 
-      fireRef.push().set(vm.convidado);
+      fireRef.push().set(vm.convidado).then(function () {
+        // show thumbs up
+      }).catch(function () {
+        // error message
+      });
     }
   }
 })();
@@ -118,13 +123,13 @@
     }
   
     vm.marcos = [{
-      text: 'Pois bem, tudo começou, por incrível que pareça, em uma aula de Kung Fu. Ambos são alunos do mesmo instrutor, que dava aula na academia Tropical, no Coração Eucarístico, e na academia Body Art, no Santa Lúcia. Um dia o André foi fazer um treino na academia Tropical e assim o casal se conheceu.',
+      text: 'Tudo começou, por incrível que pareça, em uma aula de Kung Fu, arte marcial que ambos praticam há aproximadamente 8 anos. Um dia o André foi fazer um treino na academia onde Daniela treinava e assim o casal se conheceu.',
       title: 'Onde Tudo Começou',
       class: 'dani-andre-kungfu',
       isRight: true,
       isLeft: false,
     },{
-      text: 'Tempo vai, tempo vem e eles continuaram a se encontrar, mas por causa de encontros feitos pela própria turma de Kung Fu. Houve bares, partidas de Rock Band na casa do Leandro, seminário de Tui Na... houve até um incidente em um sítio onde André recitou uma cantada ridícula para a Daniela. Podemos parafrasea-la aqui: "Asa de morcego, asa de galinha, se você quiser ficar comigo, da uma risadinha!". Não preciso dizer que não rolou nada nesse dia, ainda mais com essa cantada. Mas a Daniela deu sim uma risadinha!',
+      text: 'O tempo passou e eles continuaram a se encontrar em alguns eventos realizados pela escola na qual treinavam e também em encontros organizados pela turma de Kung Fu: bares, partidas de Rock Band, seminários... houve até um incidente em um sítio onde André recitou uma cantada ridícula para a Daniela - ver link - e que, apesar de não ter rolado nada naquele dia (ainda mais com essa cantada!) no fundo, no fundo, funcionou!',
       title: 'Apenas Amigos',
       class: 'stone',
       isRight: false,
@@ -186,13 +191,13 @@
 
     vm.padrinhos = [{
       name: 'Celso Peter e Cecília Mara',
-      description: 'Amizade que começou na faculdade e que se fortificou ainda mais com o passar do tempo. Ciça era minha parceira de trabalhos e estudos na sala de aula, minha dupla, e o Pter era aquele cara que queria sempre roubar minha dupla com a justificativa de que ela era namorada dele. (rs)Cada um com seu jeito de ser, ela com uma paciência infindável (meta de vida!!!) e ele com o jeito brincalhão e divertido, me ensinaram várias coisas sobre relacionamento e que eles nem imaginam.. de modo que antes eles eram meus afilhados de casamento e agora se tornarão nossos padrinhos de casamento.',
+      description: 'Amizade que começou na faculdade e que se fortificou ainda mais com o passar do tempo. Ciça era minha parceira de trabalhos e estudos na sala de aula, minha dupla, e o Peter era aquele cara que sempre queria roubar minha dupla com a justificativa de que ela era namorada dele (rs). Cada um com seu jeito de ser, ela com uma paciência infindável (meta de vida!!!) e ele com o jeito brincalhão e divertido, me ensinaram várias coisas sobre relacionamento que eles nem imaginam..',
       filiacao: 'Amigos da Noiva',
       class: 'celso-ceci',
       rightAligned: true
     },{
       name: 'Paula Botelho e Thiago Lins',
-      description: 'É mais do que óbvio que esse casal estaria aqui! Paula é minha irmã de sangue e de coração. Infelizmente, quando morávamos juntos, eu a enlouquecia! Tocava violão as 23hrs, gritava no meu quarto quando estava jogando no meu computador, escutava televisão em um volume muito alto pra ela... ou seja, fazia de tudo para perturbar a paz da qual ela tinha em casa. Mas, contudo, porém, entretanto, todavia, ainda sim conseguimos ter espaços nos nossos corações para compatilhar um amor só nosso (mesmo que eu suma de vez enquando viu Paula?). Thiago foi aquele cara cabeludo e de camisa hippie que apareceu lá em casa uma vez. Eu lembro até hoje você me pedindo pra ver o GTA Vice City que eu estava jogando naquela hora. Pois bem, o Thiago conseguiu mais do que meu respeito demonstrando um crescimento incrível no passar dos anos, sem contar no carinho com minha irmã do qual já presenciel inumeras vezes. Por isso os dois possuem um lugar especial!',
+      description: 'É mais do que óbvio que esse casal estaria aqui! Paula é minha irmã de sangue e de coração. Infelizmente, quando morávamos juntos eu a enlouquecia! Tocava violão às 23hrs, gritava no meu quarto quando estava jogando no computador, escutava televisão em um volume muito alto pra ela... ou seja, fazia de tudo para perturbar a paz que ela tinha em casa. Mas, contudo, porém, entretanto, todavia.. ainda assim conseguimos ter espaços nos nossos corações para compatilhar um amor só nosso (mesmo que eu suma de vez enquando, viu, Paula?!). Thiago foi aquele cara cabeludo e de camisa hippie que apareceu lá em casa uma vez. Eu lembro até hoje você me pedindo pra ver o GTA Vice City que eu estava jogando naquela hora. Pois bem, o Thiago conseguiu mais do que meu respeito demonstrando um crescimento incrível com o passar dos anos.. sem contar no carinho com minha irmã - que já presenciel inúmeras vezes. Por isso, esses dois possuem um lugar especial!',
       filiacao: 'Família do Noivo',
       class: 'paula-thi',
       rightAligned: false
@@ -205,24 +210,24 @@
     },{
       name: 'Leonardo Cabral e Lilia Finelli',
       description: 'Caramba! Como que eu posso descrever essa amizade? Nos conhecemos no colégio, onde tudo era mais fácil. Mas a gente se conectou mesmo foi no ensino médio.',
-      filiacao: 'Amigos do Noivo',
+      filiacao: 'Amigos do casal',
       class: 'leo-li',
       rightAligned: false
     },{
       name: 'Thiago Dutra e Mayte Balarini',
-      description: 'Thigo é o exemplo daquele primo que se encaixa perfeitamente no perfil de irmão, aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação. ',
+      description: 'Thigo é o exemplo daquele primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação. ',
       filiacao: 'Família da Noiva',
       class: 'tiago-mayte',
       rightAligned: true
     },{
       name: 'Raphael Villani',
-      description: 'Freak (zoid)! Isso define bem o Rapha. Lembro-me de quando minha mãe falou: "André, hoje vou te apresentar o filho do Adriano, Raphael". A única coisa que passava na minha cabeça era: "Nossa, só falta ser um boyzinho chato pra caramba!". Mas pra minha sorte apareceu um nerd, fissurado em RPG, anime e coisas idiotas (que coincidência) e que é (isso mesmo, no presente) completamente insano. Vivenciei várias experiências bizaras com ele, entre elas: quando por um momento eu era miope, a foto de menos que uma década, invasão de um quarto a dois andares de altura escalando pela sacada do prédio... Pois é, mas apesar de tudo ele sempre foi brother. Companheiro de RPG, animes e viajens, e tenho muito carinho quando alguém me pergunta quem é o Raphael e eu digo: "É o meu irmão".',
+      description: 'Freak (zoid)! Isso define bem o Rapha. Lembro-me de quando minha mãe falou: "André, hoje vou te apresentar o filho do Adriano, Raphael". A única coisa que passava na minha cabeça era: "Nossa, só falta ser um boyzinho chato pra caramba!". Mas, pra minha sorte, apareceu um nerd fissurado em RPG, anime e coisas idiotas (que coincidência!!) e que é (isso mesmo, no presente) completamente insano. Vivenciei várias experiências bizaras com ele, como, por exemplo: quando por um momento eu era miope; a foto de menos que uma década; invasão de um quarto a dois andares de altura escalando pela sacada do prédio... Pois é, mas, apesar de tudo, ele sempre foi brother. Companheiro de RPG, animes e viajens! Tenho muita satisfação quando alguém me pergunta quem é o Raphael e eu digo: "É o meu irmão!".',
       filiacao: 'Família do Noivo',
       class: 'villani',
       rightAligned: false
     },{
       name: 'Guilherme Chediack',
-      description: defaultText,
+      description:'Chedda Miagui é um amigo das antigas. Posso dizer, inclusive, que é um dos meus melhores amigos. Nossa amizade começou quando ele foi de penetra na minha festa de 15 anos.. ele, que é 2 anos mais velho que eu, acabou se tornando um amigo para todas as horas, parceiro de inúmeras histórias, de shows de Nei Cobain, de diversas sessões de guitar hero na casa do HC..alguém que eu sei que sempre posso contar e que está ao meu lado em qualquer situação.',
       filiacao: 'Amigo da Noiva',
       class: 'chediack',
       rightAligned: true
@@ -234,7 +239,7 @@
       rightAligned: false
     },{
       name: 'Patricia Rodrigues',
-      description: defaultText,
+      description: 'Patrícia é a minha prima mais velha por parte de pai e, quando eu nasci, ela queria roubar todos meus brinquedos e presentes (rs)! Mas, passada essa fase de trombadinha dela (rs), acabamos desenvolvendo uma amizade sincera, partilhando alguns altos e baixos, algumas vergonhas alheias (rs) e diversos conselhos (eu dei mais conselho do que ela, claro! rs). Hoje, com toda certeza, posso dizer que sempre estaremos presente uma na vida da outra!',
       filiacao: 'Família da Noiva',
       class: 'patricia',
       rightAligned: true
@@ -258,7 +263,7 @@
       rightAligned: false
     },{
       name: 'Gabriela Caldeira',
-      description: defaultText,
+      description: 'Gabriela é aquela prima que fazia você passar vergonha todo santo domingo que ia almoçar na casa da sua avó, pois ela inventava umas apresentações de ballet onde todas as primas (ela, eu, Carol e Paty) precisávamos "dançar" para toda família (Gabi, eu te odiava de todo meu coração (rs)). Graças a Deus essa fase passou, ela se tornou uma pessoa normal (rs) e a gente desenvolveu uma amizade sincera. Hoje, ela é uma das pessoas que mais considero e que, com certeza, fará parte de todos os momentos da minha vida!',
       filiacao: 'Família da Noiva',
       class: 'gabi',
       rightAligned: true

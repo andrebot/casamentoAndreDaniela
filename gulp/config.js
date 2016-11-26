@@ -2,6 +2,8 @@ module.exports = {
   appJSLibPaths: [
     'node_modules/angular/angular.min.js',
     'node_modules/angular/angular.min.js.map',
+    'node_modules/angular-messages/angular-messages.min.js',
+    'node_modules/angular-messages/angular-messages.min.js.map',
     'node_modules/angular-animate/angular-animate.min.js',
     'node_modules/angular-animate/angular-animate.min.js.map',
     'node_modules/angular-aria/angular-aria.min.js',

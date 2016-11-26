@@ -2,6 +2,7 @@
   'use strict';
 
   var dependencies = ['ngMaterial',
+                      'ngMessages',
                       'ui.router'];
 
   angular.module('weddingPage', dependencies)

@@ -14,7 +14,11 @@
     vm.submit = function () {
       var fireRef = firebase.database().ref();
 
-      fireRef.push().set(vm.convidado);
+      fireRef.push().set(vm.convidado).then(function () {
+        // show thumbs up
+      }).catch(function () {
+        // error message
+      });
     }
   }
 })();
