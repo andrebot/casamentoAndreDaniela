@@ -4,7 +4,7 @@
 
   function RSPVController ($mdDialog, $scope) {
     var vm = this;
-    var loadingElement = angular.element(document.querySelector('#loading-holder'));
+    vm.isLoading = false;
 
     vm.convidado = {
       nome: '',
@@ -14,7 +14,7 @@
 
     vm.submit = function () {
       var fireRef = firebase.database().ref();
-      loadingElement.removeClass('hidden');
+      vm.isLoading = true;
 
       fireRef.push().set(vm.convidado).then(function () {
         $mdDialog.show({
@@ -28,7 +28,7 @@
           template: '<md-dialog ng-class="dialog.css"><md-dialog-content class="md-dialog-content" role="document" tabIndex="-1"><h2 class="md-title">Presença Confirmada!</h2><div class="md-dialog-content-body"><div layout="row"><md-icon md-svg-src="/imgs/svgs/ic_thumb_up_48px.svg" flex></md-icon></div></div></md-dialog-content><md-dialog-actions><md-button ng-click="dialog.hide()" class="md-primary md-confirm-button">OK</md-button></md-dialog-actions></md-dialog>'
         }); 
 
-        loadingElement.addClass('hidden');
+        vm.isLoading = false;
       }).catch(function () {
         $mdDialog.show(
           $mdDialog.alert()
@@ -38,7 +38,7 @@
             .ok('ok')
         );
 
-        loadingElement.addClass('hidden');
+        vm.isLoading = false;
       });
     }
   }

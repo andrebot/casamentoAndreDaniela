@@ -1,6 +1,6 @@
 <md-content class="md-padding">
   <md-card>
-    <div id="loading-holder" layout="row" layout-sm="column" layout-align="space-around" class="loading hidden">
+    <div id="loading-holder" layout="row" layout-sm="column" layout-align="space-around" class="loading" ng-class="{'hidden': !vm.isLoading}">
       <md-progress-circular md-mode="indeterminate" class="positioning"></md-progress-circular>
     </div>
     <div id="confirm" class="hidden">
