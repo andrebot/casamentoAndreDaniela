@@ -9,11 +9,32 @@
 
       <p>Aqui estão nossas listas de presentes!</p>
 
-      <ul>
-        <li><a href="#">Fast</a></li>
-        <li><a href="#">Etna</a></li>
-        <li><a href="#">Ponto Frio</a></li>
-      </ul>
+      <div layout="row" layout-xs="column" layout-align-xs="space-around center" layout-align-gt-xs="center center" class="listas">
+
+        <div flex>
+            <div class="photo-frame">
+              <a href="#">
+                <div class="photo-holder fast"></div>
+              </a>
+            </div>
+        </div>
+
+        <div flex>
+            <div class="photo-frame">
+              <a href="#">
+                <div class="photo-holder etna"></div>
+              </a>
+            </div>
+        </div>
+
+        <div flex> 
+            <div class="photo-frame">
+              <a href="#">
+                <div class="photo-holder ponto-frio"></div>
+              </a>
+            </div>          
+        </div>
+      </div>
 
     </md-card-content>
   </md-card>

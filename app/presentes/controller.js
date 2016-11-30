@@ -2,7 +2,7 @@
   angular.module('weddingPage')
          .controller('presentesController', PresentesController);
 
-  function PresentesController ($scope) {
+  function PresentesController () {
     var vm = this;
   }
 })();

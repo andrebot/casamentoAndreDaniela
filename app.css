@@ -54,7 +54,7 @@ body {
 .time-line {
   background-color: #E8E8E8;
   width: 2px;
-  height: 90%;
+  height: 98%;
   position: absolute;
   left: 50%;
 }
@@ -63,30 +63,6 @@ body {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
   text-align: justify;
 }
-
-/*.timeline-text:after {
-  position: relative;
-  top: -47px;
-  right: 197px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 0px solid #fff;
-  border-right: 15px solid #fff;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-
-.timeline-text:before {
-  position: relative;
-  top: 25px;
-  right: 25px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 0px solid #D8D8D8;
-  border-right: 15px solid #D8D8D8;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}*/
 
 .timeline-bullet-holder {
   position: relative;
@@ -364,4 +340,25 @@ body {
     margin-bottom: 10px;
     text-align: left;
   }
+}
+.photo-frame .photo-holder.fast {
+  background: #ffffff url(imgs/fast.png) no-repeat;
+  background-position: 37%;
+  background-size: 100px;
+}
+
+.photo-frame .photo-holder.etna {
+  background: #ffffff url(imgs/etna.jpg) no-repeat;
+  background-position: 50%;
+  background-size: 161px;
+}
+
+.photo-frame .photo-holder.ponto-frio {
+  background: #ffffff url(imgs/ponto-frio.jpg) no-repeat;
+  background-position: 46%;
+  background-size: 170px;
+}
+
+.listas .photo-frame {
+  margin: auto;
 }

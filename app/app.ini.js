@@ -84,7 +84,7 @@
       },
       views: {
         'presentes': {
-          controller: 'PresentesController',
+          controller: 'presentesController',
           controllerAs: 'vm',
           templateUrl: 'views/presentes.html'
         }

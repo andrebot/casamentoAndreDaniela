@@ -2,7 +2,7 @@
   angular.module('weddingPage')
          .controller('casalController', CasalController);
 
-  function CasalController ($scope) {
+  function CasalController () {
     var vm = this;
   }
 })();

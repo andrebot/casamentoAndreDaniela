@@ -85,7 +85,7 @@
       },
       views: {
         'presentes': {
-          controller: 'PresentesController',
+          controller: 'presentesController',
           controllerAs: 'vm',
           templateUrl: 'views/presentes.html'
         }
@@ -143,11 +143,10 @@
 })();
 
 (function () {
-  CasalController.$inject = ["$scope"];
   angular.module('weddingPage')
          .controller('casalController', CasalController);
 
-  function CasalController ($scope) {
+  function CasalController () {
     var vm = this;
   }
 })();
@@ -267,12 +266,12 @@
     },{
       name: 'Kathy Prates e Rafael Manso',
       description: 'Sabe aquela pessoa que o "santo bate" logo de cara? Então, foi assim que a minha amizade com a Kathy começou. Jamais imaginei que fosse conhecer uma pessoa com o gênio 10% pior que o meu (rs) e que ainda fosse capaz de me compreender tão bem. Já o Rafa, também conhecido como bombeirão (rs), é o oposto de nós duas. Calmo, paciente... deve ser por isso que ele deu certo com a Kathy, viraram meus afilhados de casamento e hoje formam uma família linda!',
-      filiacao: 'Amigos da Noiva',
+      filiacao: 'Amigos do Casal',
       class: 'katy-rafael',
       rightAligned: true
     },{
       name: 'Leonardo Cabral e Lilia Finelli',
-      description: 'Caramba! Como que eu posso descrever essa amizade? Nos conhecemos no colégio, onde tudo era mais fácil. Mas a gente se conectou mesmo foi no ensino médio.',
+      description: 'Caramba! Como que eu posso descrever essa amizade? Nos conhecemos no colégio, onde tudo era mais fácil, mais ou menos na sexta série do fundamental. Lembro-me que por minha culpa a gente levou zero na prova de inglês (foi mal Leo!), mas a gente se conectou mesmo foi no ensino médio. Parceiro de jogos, almoços no intervalo entre as aulas de manhã e da tarde e bagunça nas festas na casa do Jesus. Conheci a Li nessa mesma época. Eles se conheceram em uma aula de Forró e desde então sempre estava com a gente! Uma menina com opinião sincera e uma pessoa afiada para fazer comentários certeiros. Um casal nota mil e que desejo sempre o melhor de tudo, pois merecem. A sim, não posso deixar de colcar isso, mas foi por causa do Leo que comecei com Kung Fu! Ou seja, ele também tem uma certa responsabilidade por tudo isso, hahaha!',
       filiacao: 'Amigos do casal',
       class: 'leo-li',
       rightAligned: false
@@ -296,7 +295,7 @@
       rightAligned: true
     },{
       name: 'Anna Gusmão',
-      description: 'Prima pirutinha! Anna sempre foi a prima travessa da família.',
+      description: 'Prima birutinha! Anna sempre foi a prima travessa da família. Sempre energética e de sorriso fácil. Ela é um exemplo de uma pessoa de bom coração e esforçada. A Anna, para mim, é uma prova de que podemos sim estar sempre alegres e de bom humor, independente do que seja. E essa sensação que eu gostaria de nunca perder e sempre almejar possuir. Dessa forma gostaria muito que você, Anna, trouxesse essa energia possitiva para mim e Daniela, agraciando nossa união.',
       filiacao: 'Família do Noivo',
       class: 'anna',
       rightAligned: false
@@ -320,7 +319,7 @@
       rightAligned: true
     },{
       name: 'Paolo Conti',
-      description: 'Paolo é umas das pessoas mais atípicas que eu conheço (mesmo eu ter falado que quase todos os nossos padrinhos são, hahaha). Paolo foi meu colega de basquete, jogávamos juntos no colégio, iamos a campeonatos. Sempre foi um cara descolado (mesmo com essa nareba). Mas foi no cursinho para o vestibular, quando estávamos tentando pela segunda vez entrar em uma faculdade, que a gente deu mais certo. Eramos da mesma sala, e como a gente se conhecia acabou que conviviamos todos os dias e não podia ter dado mais certo.',
+      description: 'Paolo é umas das pessoas mais atípicas que eu conheço (mesmo eu ter falado que quase todos os nossos padrinhos são, hahaha). Paolo foi meu colega de basquete, jogávamos juntos no colégio, iamos a campeonatos. Sempre foi um cara descolado (mesmo com essa nareba). Mas foi no cursinho para o vestibular, quando estávamos tentando pela segunda vez entrar em uma faculdade, que a gente deu mais certo. Eramos da mesma sala, e como a gente se conhecia acabou que conviviamos todos os dias e não podia ter dado mais certo. Brother que possui uma preocupação sincera por seus amigos e entes queridos, valeu por todas as vezes que você esteve presente quando eu precisava.',
       filiacao: 'Amigo do Noivo',
       class: 'paolo',
       rightAligned: false
@@ -335,11 +334,10 @@
   }
 })();
 (function () {
-  PresentesController.$inject = ["$scope"];
   angular.module('weddingPage')
          .controller('presentesController', PresentesController);
 
-  function PresentesController ($scope) {
+  function PresentesController () {
     var vm = this;
   }
 })();
