@@ -76,6 +76,19 @@
           templateUrl: 'views/rspv.html'
         }
       }
+    })
+    .state('index.presentes', {
+      url: 'presentes',
+      data: {
+        'selectedTab': 6
+      },
+      views: {
+        'presentes': {
+          controller: 'PresentesController',
+          controllerAs: 'vm',
+          templateUrl: 'views/presentes.html'
+        }
+      }
     });
   }
 

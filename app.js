@@ -77,6 +77,19 @@
           templateUrl: 'views/rspv.html'
         }
       }
+    })
+    .state('index.presentes', {
+      url: 'presentes',
+      data: {
+        'selectedTab': 6
+      },
+      views: {
+        'presentes': {
+          controller: 'PresentesController',
+          controllerAs: 'vm',
+          templateUrl: 'views/presentes.html'
+        }
+      }
     });
   }
 
@@ -319,5 +332,14 @@
       rightAligned: true
     }];
     
+  }
+})();
+(function () {
+  PresentesController.$inject = ["$scope"];
+  angular.module('weddingPage')
+         .controller('presentesController', PresentesController);
+
+  function PresentesController ($scope) {
+    var vm = this;
   }
 })();
