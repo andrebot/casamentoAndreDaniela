@@ -1,7 +1,7 @@
-
 body {
   font-family: 'Alice', serif;
 }
+
 
 .timeline-frame-small {
   height: 20px;
@@ -81,6 +81,12 @@ body {
   background: #ffffff url(imgs/dani-lego.jpg) no-repeat;
   background-position: 55%;
   background-size: 200px;
+}
+
+.photo-frame-small .photo-holder-small.site {
+  background: #ffffff url(imgs/site.jpg) no-repeat;
+  background-position: 55%;
+  background-size: 140px;
 }
 
 .photo-frame-small .photo-holder-small.pedido-casamento {

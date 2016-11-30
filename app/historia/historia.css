@@ -78,6 +78,12 @@
   background-size: 200px;
 }
 
+.photo-frame-small .photo-holder-small.site {
+  background: #ffffff url(imgs/site.jpg) no-repeat;
+  background-position: 55%;
+  background-size: 140px;
+}
+
 .photo-frame-small .photo-holder-small.pedido-casamento {
   background: #ffffff url(imgs/pedido-casamento.jpg) no-repeat;
   background-position: 80% 55%;
