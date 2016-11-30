@@ -39,10 +39,23 @@
         }
       }
     })
+    .state('index.casal', {
+      url: 'casal',
+      data: {
+        'selectedTab': 2
+      },
+      views: {
+        'casal': {
+          controller: 'casalController',
+          controllerAs: 'vm',
+          templateUrl: 'views/casal.html'
+        }
+      }
+    })
     .state('index.padrinhos', {
       url: 'padrinhos',
       data: {
-        'selectedTab': 2
+        'selectedTab': 3
       },
       views: {
         'padrinhos': {
@@ -55,7 +68,7 @@
     .state('index.rspv', {
       url: 'rspv',
       data: {
-        'selectedTab': 4
+        'selectedTab': 5
       },
       views: {
         'rspv': {
@@ -70,11 +83,13 @@
 })();
 
 (function () {
+  RSPVController.$inject = ["$mdDialog", "$scope"];
   angular.module('weddingPage')
          .controller('RSPVController', RSPVController);
 
-  function RSPVController () {
+  function RSPVController ($mdDialog, $scope) {
     var vm = this;
+    vm.isLoading = false;
 
     vm.convidado = {
       nome: '',
@@ -84,13 +99,43 @@
 
     vm.submit = function () {
       var fireRef = firebase.database().ref();
+      vm.isLoading = true;
 
       fireRef.push().set(vm.convidado).then(function () {
-        // show thumbs up
+        $mdDialog.show({
+          clickOutsideToClose: true,
+          controllerAs: 'dialog',
+          controller: function () {
+            this.hide = function () {
+              $mdDialog.hide();
+            }
+          },
+          template: '<md-dialog ng-class="dialog.css"><md-dialog-content class="md-dialog-content" role="document" tabIndex="-1"><h2 class="md-title">Presença Confirmada!</h2><div class="md-dialog-content-body"><div layout="row"><md-icon md-svg-src="/imgs/svgs/ic_thumb_up_48px.svg" flex></md-icon></div></div></md-dialog-content><md-dialog-actions><md-button ng-click="dialog.hide()" class="md-primary md-confirm-button">OK</md-button></md-dialog-actions></md-dialog>'
+        }); 
+
+        vm.isLoading = false;
       }).catch(function () {
-        // error message
+        $mdDialog.show(
+          $mdDialog.alert()
+            .clickOutsideToClose(true)
+            .title('Erro na Confirmação')
+            .textContent('Me desculpe, mas houve um erro quando tentamos confirmar sua presença. Será que você poderia tentar de novo mais tarde?')
+            .ok('ok')
+        );
+
+        vm.isLoading = false;
       });
     }
+  }
+})();
+
+(function () {
+  CasalController.$inject = ["$scope"];
+  angular.module('weddingPage')
+         .controller('casalController', CasalController);
+
+  function CasalController ($scope) {
+    var vm = this;
   }
 })();
 (function () {
@@ -102,15 +147,14 @@
     var vm = this;
     vm.showAlert = function (event, index) {
       var marco = vm.marcos[index];
-      
 
-      if (navigator.userAgent.match(/Android/i)
-           || navigator.userAgent.match(/webOS/i)
-           || navigator.userAgent.match(/iPhone/i)
-           || navigator.userAgent.match(/iPad/i)
-           || navigator.userAgent.match(/iPod/i)
-           || navigator.userAgent.match(/BlackBerry/i)
-           || navigator.userAgent.match(/Windows Phone/i)) {
+      if (   navigator.userAgent.match(/Android/i)
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/iPhone/i)
+          || navigator.userAgent.match(/iPad/i)
+          || navigator.userAgent.match(/iPod/i)
+          || navigator.userAgent.match(/BlackBerry/i)
+          || navigator.userAgent.match(/Windows Phone/i)) {
         $mdDialog.show(
           $mdDialog.alert()
             .clickOutsideToClose(true)
@@ -118,7 +162,7 @@
             .textContent(marco.text)
             .ok('ok')
             .targetEvent(event)
-        )
+        );
       }
     }
   

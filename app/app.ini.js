@@ -38,10 +38,23 @@
         }
       }
     })
+    .state('index.casal', {
+      url: 'casal',
+      data: {
+        'selectedTab': 2
+      },
+      views: {
+        'casal': {
+          controller: 'casalController',
+          controllerAs: 'vm',
+          templateUrl: 'views/casal.html'
+        }
+      }
+    })
     .state('index.padrinhos', {
       url: 'padrinhos',
       data: {
-        'selectedTab': 2
+        'selectedTab': 3
       },
       views: {
         'padrinhos': {
@@ -54,7 +67,7 @@
     .state('index.rspv', {
       url: 'rspv',
       data: {
-        'selectedTab': 4
+        'selectedTab': 5
       },
       views: {
         'rspv': {
