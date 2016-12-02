@@ -24,8 +24,7 @@
         <div layout="column" layout-align="center center">
           <div flex=none layout="row" layout-margin layout-padding layout-align="center center">
             <div flex ng-if="marco.isRight" hide-xs></div>
-            <div flex class="timeline-text" ng-if="marco.isLeft" hide-xs>
-              {{marco.text}}
+            <div flex class="timeline-text" ng-if="marco.isLeft" hide-xs ng-bind-html="marco.text">
             </div>
             <div flex=none class="timeline-bullet-holder" ng-click="vm.showAlert($event, $index)">
               <div class="photo-frame-small">
@@ -33,8 +32,7 @@
               </div>
             </div>
             <div flex ng-if="marco.isLeft" hide-xs></div>
-            <div flex class="timeline-text" ng-if="marco.isRight" hide-xs>
-              {{marco.text}}
+            <div flex class="timeline-text" ng-if="marco.isRight" hide-xs ng-bind-html="marco.text">
             </div>
           </div>
         </div>

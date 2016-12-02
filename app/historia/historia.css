@@ -62,13 +62,8 @@
 
 .photo-frame-small .photo-holder-small.pedido-casamento {
   background: #ffffff url(imgs/pedido-casamento.jpg) no-repeat;
-  background-position: 80% 55%;
-  background-size: 200px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+  background-position: 80% 70%;
+  background-size: 100px;
 }
 
 .photo-frame-small .photo-holder-small.igreja {

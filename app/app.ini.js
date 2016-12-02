@@ -64,6 +64,19 @@
         }
       }
     })
+    .state('index.dia', {
+      url: 'dia',
+      data: {
+        'selectedTab': 4
+      },
+      views: {
+        'dia': {
+          controller: 'diaController',
+          controllerAs: 'vm',
+          templateUrl: 'views/dia.html'
+        }
+      }
+    })
     .state('index.rspv', {
       url: 'rspv',
       data: {

@@ -38,6 +38,7 @@
   transform: scaleX(-1);
 }
 
+
 body {
   font-family: 'Alice', serif;
 }
@@ -106,19 +107,18 @@ body {
 
 .photo-frame-small .photo-holder-small.pedido-casamento {
   background: #ffffff url(imgs/pedido-casamento.jpg) no-repeat;
-  background-position: 80% 55%;
-  background-size: 200px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+  background-position: 80% 70%;
+  background-size: 100px;
 }
 
 .photo-frame-small .photo-holder-small.igreja {
   background: #ffffff url(imgs/igreja.jpg) no-repeat;
   background-position: 55%;
   background-size: 200px;
+}
+
+a {
+  color: #4caf50;
 }
 
 .page-title {
@@ -219,67 +219,67 @@ body {
 }
 
 .photo-frame-small .photo-holder-small.chediack {
-  background: #ffffff url(imgs/chediack.JPG) no-repeat;
+  background: #ffffff url(imgs/chediack.jpg) no-repeat;
   background-position: 80%;
   background-size: 210px;
 }
 
 .photo-frame-small .photo-holder-small.villani {
-  background: #ffffff url(imgs/villani.JPG) no-repeat;
+  background: #ffffff url(imgs/villani.jpg) no-repeat;
   background-position: 80%;
   background-size: 100px;
 }
 
 .photo-frame-small .photo-holder-small.celso-ceci {
-  background: #ffffff url(imgs/celso_ceci.JPG) no-repeat;
+  background: #ffffff url(imgs/celso_ceci.jpg) no-repeat;
   background-position: 50%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.paula-thi {
-  background: #ffffff url(imgs/thi_paula.JPG) no-repeat;
+  background: #ffffff url(imgs/thi_paula.jpg) no-repeat;
   background-position: 50%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.katy-rafael {
-  background: #ffffff url(imgs/rafa_katy.JPG) no-repeat;
+  background: #ffffff url(imgs/rafa_katy.jpg) no-repeat;
   background-position: 50%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.leo-li {
-  background: #ffffff url(imgs/leo_li.JPG) no-repeat;
+  background: #ffffff url(imgs/leo_li.jpg) no-repeat;
   background-position: 50%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.tiago-mayte {
-  background: #ffffff url(imgs/tiago_Mayte.JPG) no-repeat;
+  background: #ffffff url(imgs/tiago_Mayte.jpg) no-repeat;
   background-position: 50% 25%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.paolo {
-  background: #ffffff url(imgs/paolo.JPG) no-repeat;
+  background: #ffffff url(imgs/paolo.jpg) no-repeat;
   background-position: 50% 20%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.patricia {
-  background: #ffffff url(imgs/patricia.JPG) no-repeat;
+  background: #ffffff url(imgs/patricia.jpg) no-repeat;
   background-position: 50% 20%;
   background-size: 100px;
 }
 
 .photo-frame-small .photo-holder-small.phelps {
-  background: #ffffff url(imgs/phelps.JPG) no-repeat;
+  background: #ffffff url(imgs/phelps.jpg) no-repeat;
   background-position: 50% 0%;
   background-size: 135px;
 }
 
 .photo-frame-small .photo-holder-small.samara {
-  background: #ffffff url(imgs/samara.JPG) no-repeat;
+  background: #ffffff url(imgs/samara.jpg) no-repeat;
   background-position: 50%;
   background-size: 100px;
 }
@@ -291,7 +291,7 @@ body {
 }
 
 .photo-frame-small .photo-holder-small.gabi {
-  background: #ffffff url(imgs/gabriela.JPG) no-repeat;
+  background: #ffffff url(imgs/gabriela.jpg) no-repeat;
   background-position: 0 0;
   background-size: 100px;
 }
