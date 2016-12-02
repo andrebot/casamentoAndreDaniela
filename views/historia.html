@@ -1,0 +1,44 @@
+<md-content class="md-padding">
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline tab-title">A Nossa Historia</span>
+        <p hide show-xs class="tab-title">Clique nas imagens!</p>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content style="position: relative;">
+
+      <div class="time-line"></div>
+
+      <div layout="column" layout-align="center center">
+        <div flex=none layout="row" layout-align="space-between center">
+          <div flex></div>
+          <div flex=none class="timeline-bullet-holder">
+            <div class="timeline-frame-small"></div>
+          </div>
+        </div>
+      </div>
+
+      <ng-repeat ng-repeat="marco in vm.marcos">
+
+        <div layout="column" layout-align="center center">
+          <div flex=none layout="row" layout-margin layout-padding layout-align="center center">
+            <div flex ng-if="marco.isRight" hide-xs></div>
+            <div flex class="timeline-text" ng-if="marco.isLeft" hide-xs ng-bind-html="marco.text">
+            </div>
+            <div flex=none class="timeline-bullet-holder" ng-click="vm.showAlert($event, $index)">
+              <div class="photo-frame-small">
+                <div class="photo-holder-small" ng-class="marco.class"></div>
+              </div>
+            </div>
+            <div flex ng-if="marco.isLeft" hide-xs></div>
+            <div flex class="timeline-text" ng-if="marco.isRight" hide-xs ng-bind-html="marco.text">
+            </div>
+          </div>
+        </div>
+
+      </ng-repeat>
+
+    </md-card-content>
+  </md-card>
+</md-content>
