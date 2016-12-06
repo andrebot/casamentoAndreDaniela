@@ -173,6 +173,7 @@
 })();
 (function () {
   HistoriaController.$inject = ["$mdDialog", "$sce"];
+  DialogController.$inject = ["$scope", "$mdDialog"];
   angular.module('weddingPage')
          .controller('historiaController', HistoriaController);
 
@@ -188,14 +189,29 @@
           || navigator.userAgent.match(/iPod/i)
           || navigator.userAgent.match(/BlackBerry/i)
           || navigator.userAgent.match(/Windows Phone/i)) {
-        $mdDialog.show(
-          $mdDialog.alert()
-            .clickOutsideToClose(true)
-            .title(marco.title)
-            .textContent(marco.text)
-            .ok('ok')
-            .targetEvent(event)
-        );
+
+        $mdDialog.show({
+          targetEvent: event,
+          controller: DialogController,
+          template:
+           '<md-dialog aria-label="History Dialog">' +
+           '  <md-dialog-content>'+
+           '    <div class="md-dialog-content">' +
+           '      <h2 class="md-title">'+
+                    marco.title +
+           '      </h2>'+
+           '      <p>' +
+                    marco.text +
+           '      </p>' +
+           '    </div>' +
+           '  </md-dialog-content>' +
+           '  <md-dialog-actions>' +
+           '    <md-button ng-click="closeDialog()" class="md-primary">' +
+           '      ok' +
+           '    </md-button>' +
+           '  </md-dialog-actions>' +
+           '</md-dialog>',
+        })
       }
     }
   
@@ -249,6 +265,13 @@
       isLeft: true
     }];
   }
+
+  function DialogController($scope, $mdDialog) {
+    $scope.closeDialog = function() {
+      $mdDialog.hide();
+    }
+  }
+
 })();
 
 (function () {
