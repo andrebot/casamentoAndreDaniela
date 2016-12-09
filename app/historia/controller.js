@@ -65,7 +65,7 @@
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que a fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram quase 4 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
+      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que a fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram mais de 3 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
       title: 'Desenrolar do Namoro',
       class: 'dani-lego',
       isRight: true,
@@ -77,7 +77,7 @@
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, no aniversário de namoro do casal, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo, no final da brincadeira, um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
+      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo, no final da brincadeira, um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: true,
