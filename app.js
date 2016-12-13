@@ -157,17 +157,17 @@
 
 (function () {
   angular.module('weddingPage')
-         .controller('casalController', CasalController);
+         .controller('diaController', DiaController);
 
-  function CasalController () {
+  function DiaController () {
     var vm = this;
   }
 })();
 (function () {
   angular.module('weddingPage')
-         .controller('diaController', DiaController);
+         .controller('casalController', CasalController);
 
-  function DiaController () {
+  function CasalController () {
     var vm = this;
   }
 })();
@@ -240,7 +240,7 @@
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que a fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram quase 4 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
+      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que a fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram mais de 3 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
       title: 'Desenrolar do Namoro',
       class: 'dani-lego',
       isRight: true,
@@ -252,7 +252,7 @@
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, no aniversário de namoro do casal, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo, no final da brincadeira, um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
+      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo, no final da brincadeira, um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: true,
@@ -315,7 +315,7 @@
       rightAligned: true
     },{
       name: 'Leonardo Cabral e Lilia Finelli',
-      description: 'Caramba! Como que eu posso descrever essa amizade? Conheci o Leo no colégio (onde tudo era mais fácil) por volta da sexta série, mas ficamos amigos mesmo no ensino médio. Lembro-me que por minha culpa a gente levou zero na prova de inglês (foi mal Leo!), mas a gente se conectou mesmo foi no ensino médio. Parceiro de jogos, almoços no intervalo entre as aulas dos turnos manhã e tarde e bagunça nas festas na casa do Jesus. Já a Li, que hoje é esposa do Leo, eu também conheci nessa mesma época, por causa do Leo, pois eles começaram a namorar. Desde então eles sempre estavam com a gente! Uma menina com opinião sincera e uma pessoa afiada para fazer comentários certeiros. Um casal nota mil e que desejo sempre o melhor de tudo, pois merecem. A sim, não posso deixar de comentar que foi por causa do Leo que comecei com Kung Fu! Ou seja, ele também tem uma certa responsabilidade sobre tudo isso, hahaha!',
+      description: 'Caramba! Como que eu posso descrever essa amizade? Conheci o Léo no colégio (onde tudo era mais fácil) por volta da 6ª série do fundamental, mas ficamos amigos mesmo no ensino médio. Lembro-me, inclusive, que por minha culpa a gente levou zero na prova de inglês (foi mal, Leo!). Parceiro de jogos, almoços no intervalo entre as aulas dos turnos manhã e tarde, e bagunça nas festas na casa do Jesus. Já a Li, que hoje é esposa do Léo, eu também conheci nessa mesma época, mas por causa dele já que eles começaram a namorar e, desde então, ela sempre estava com a gente! Uma menina com opinião sincera e comentários certeiros. Um casal nota mil e que desejo o melhor sempre. Ah sim, não posso deixar de comentar que foi por causa do Leo que comecei com Kung Fu! Ou seja, ele também tem uma certa responsabilidade sobre tudo isso, hahaha!',
       filiacao: 'Amigos do casal',
       class: 'leo-li',
       rightAligned: false
@@ -339,7 +339,7 @@
       rightAligned: true
     },{
       name: 'Anna Gusmão',
-      description: 'Prima birutinha! Anna sempre foi a prima travessa da família. Sempre energética e de sorriso fácil, ela é um exemplo de uma pessoa de bom coração e esforçada. A Anna, para mim, é uma prova de que podemos sim estar sempre alegres e de bom humor, independente do que seja. E essa sensação que eu gostaria de nunca perder e sempre almejar possuir. Dessa forma gostaria muito que você, Anna, trouxesse essa energia possitiva para mim e Daniela, agraciando nossa união.',
+      description: 'Prima birutinha! Anna sempre foi a prima travessa da família. Sempre energética e de sorriso fácil, ela é um exemplo de pessoa de bom coração e esforçada. A Anna, para mim, é uma prova de que podemos sim estar sempre alegres e de bom humor independente do que seja. E essa sensação que eu gostaria de nunca perder. Dessa forma, gostaria muito que você, Anna, trouxesse essa energia positiva para mim e Daniela, agraciando nossa união.',
       filiacao: 'Família do Noivo',
       class: 'anna',
       rightAligned: false
@@ -351,7 +351,7 @@
       rightAligned: true
     },{
       name: 'Gabriel Gonçalves',
-      description: 'Esse aqui foi o meu primeiro amigo mesmo no Pitágoras. Conheci o Gabriel quando estávamos na quarta série do ensino fundamental. Companheiro de Magic no meio da aula, matadas de aula, invasão da capelinha, entre outras coisas. Foi uma amizade que, nem mesmo quando saímos na mão um contra o outro, mudou (apesar de eu ter sido estritamente proibido pelo meu pai de ver o Gabriel de novo... pois é, pai, se você esta lendo isso aqui, eu ignorei essa regra sumariamente, hahahaha, não fique bravo!). Essa é uma daquelas amizades de infância que dura pra vida inteira. Podemos ficar meses sem entrar em contato um com outro, mas, sempre que encontramos, sei que nossa amizade não irá terminar. Muito obrigado por ser meu brother por todos esses anos!',
+      description: 'Esse aqui foi o meu primeiro amigo mesmo no Pitágoras. Conheci o Gabriel quando estávamos na 4ª série do ensino fundamental. Companheiro de Magic no meio da aula, matadas de aula, invasão da capelinha entre outras coisas. Foi uma amizade que, nem mesmo quando saímos na mão um contra o outro, mudou (apesar de eu ter sido estritamente proibido pelo meu pai de ver o Gabriel de novo... pois é, pai, se você esta lendo isso aqui, eu ignorei essa regra sumariamente! Hahahaha Não fique bravo!). Essa é uma daquelas amizades de infância que dura pra vida inteira. Podemos ficar meses sem entrar em contato um com outro, mas, sempre que encontramos, sei que nossa amizade não irá terminar. Muito obrigado por ser meu brother por todos esses anos!',
       filiacao: 'Amigo do Noivo',
       class: 'phelps',
       rightAligned: false
@@ -363,7 +363,7 @@
       rightAligned: true
     },{
       name: 'Paolo Conti',
-      description: 'Paolo é umas das pessoas mais atípicas que eu conheço (mesmo eu ter falado que quase todos os nossos padrinhos são, hahaha). Paolo foi meu colega de basquete, jogávamos juntos no colégio, iamos a campeonatos. Sempre foi um cara descolado (mesmo com essa nareba). Mas foi no cursinho para o vestibular, quando estávamos tentando pela segunda vez entrar em uma faculdade, que a gente deu mais certo. Eramos da mesma sala, e como a gente se conhecia, acabou que convivíamos todos os dias e não podia ter dado mais certo. Brother que possui uma preocupação sincera por seus amigos e entes queridos. Valeu por todas as vezes que você esteve presente quando eu precisava.',
+      description: 'Paolo é umas das pessoas mais atípicas que eu conheço (mesmo eu tendo falado isso de quase todos os nossos padrinhos hahaha). Paolo foi meu colega de basquete e jogávamos juntos no colégio. Mas foi no cursinho para o vestibular, quando estávamos tentando pela segunda vez entrar em uma faculdade, que a gente deu mais certo. Éramos da mesma sala e, como a gente já se conhecia, acabou que convivíamos todos os dias e não podia ter dado mais certo. É um cara que possui uma preocupação sincera com seus amigos e entes queridos. Cara, valeu por todas as vezes que você esteve presente quando eu precisava!!',
       filiacao: 'Amigo do Noivo',
       class: 'paolo',
       rightAligned: false
