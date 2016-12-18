@@ -157,17 +157,17 @@
 
 (function () {
   angular.module('weddingPage')
-         .controller('diaController', DiaController);
+         .controller('casalController', CasalController);
 
-  function DiaController () {
+  function CasalController () {
     var vm = this;
   }
 })();
 (function () {
   angular.module('weddingPage')
-         .controller('casalController', CasalController);
+         .controller('diaController', DiaController);
 
-  function CasalController () {
+  function DiaController () {
     var vm = this;
   }
 })();
