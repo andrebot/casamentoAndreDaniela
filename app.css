@@ -38,10 +38,10 @@
   transform: scaleX(-1);
 }
 
+
 body {
   font-family: 'Alice', serif;
 }
-
 
 .timeline-frame-small {
   height: 20px;
@@ -124,7 +124,7 @@ a {
 .page-title {
   text-align: center;
   margin-top: 20px;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: 'Tangerine', cursive;
 }
 
@@ -133,7 +133,7 @@ a {
 }
 
 .the-date {
-  font-size: 30px;
+  font-size: 1.875rem;
   margin: 0 15px;
 }
 
@@ -166,20 +166,18 @@ a {
   width: 120px;
 }
 
-.photo-frame .photo-holder.dani-andre {
+.photo-frame-small .photo-holder-small.dani-andre {
   background: #ffffff url(imgs/dani_andre_metlife_2.jpg) no-repeat;
-  background-position: 20%;
-  background-size: 210px;
+  background-position: 25%;
+  background-size: 190px;
 }
 
 .left-name {
   text-align: right;
-  padding-right: 10px;
 }
 
 .right-name {
   text-align: left;
-  padding-left: 10px;
 }
 
 .first-name {
@@ -189,6 +187,7 @@ a {
 
 .last-name {
   margin-top: 0px;
+  color: #8c8c8c;
 }
 
 .first-home-paragraph {
@@ -202,6 +201,18 @@ a {
   width: 50px;
   height: 65px;
   margin: 10px 10px 20px 10px;
+}
+
+@media (min-width: 601px) {
+  .left-name {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .right-name {
+    text-align: left;
+    padding-left: 10px;
+  }
 }
 .photo-frame-small {
   height: 100px;
@@ -361,6 +372,10 @@ a {
 
 .listas .photo-frame {
   margin: auto;
+}
+
+.listas .holder {
+  margin-bottom: 15px;
 }
 
 .margin-top {
