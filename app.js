@@ -303,7 +303,7 @@
       rightAligned: true
     },{
       name: 'Paula Botelho e Thiago Lins',
-      description: 'É mais do que óbvio que esse casal estaria aqui! Paula é minha irmã de sangue e de coração. Infelizmente, quando morávamos juntos eu a enlouquecia! Tocava violão às 23hrs, gritava no meu quarto quando estava jogando no computador, escutava televisão em um volume muito alto pra ela... ou seja, fazia de tudo para perturbar a paz que ela tinha em casa. Mas, contudo, porém, entretanto, todavia.. ainda assim conseguimos ter espaços nos nossos corações para compatilhar um amor só nosso (mesmo que eu suma de vez enquando, viu, Paula?!). Thiago foi aquele cara cabeludo e de camisa hippie que apareceu lá em casa uma vez. Eu lembro até hoje você me pedindo pra ver o GTA Vice City que eu estava jogando naquela hora. Pois bem, o Thiago conseguiu mais do que meu respeito demonstrando um crescimento incrível com o passar dos anos.. sem contar no carinho com minha irmã - que já presenciel inúmeras vezes. Por isso, esses dois possuem um lugar especial!',
+      description: 'É mais do que óbvio que esse casal estaria aqui! Paula é minha irmã de sangue e de coração. Infelizmente, quando morávamos juntos eu a enlouquecia! Tocava violão às 23hrs, gritava no meu quarto quando estava jogando no computador, escutava televisão em um volume muito alto pra ela... ou seja, fazia de tudo para perturbar a paz que ela tinha em casa. Mas, contudo, porém, entretanto, todavia.. ainda assim conseguimos ter espaços nos nossos corações para compatilhar um amor só nosso (mesmo que eu suma de vez enquando, viu, Paula?!). Thiago foi aquele cara cabeludo e de camisa hippie que apareceu lá em casa uma vez. Eu lembro até hoje você me pedindo pra ver o GTA Vice City que eu estava jogando naquela hora. Pois bem, o Thiago conseguiu mais do que meu respeito demonstrando um crescimento incrível com o passar dos anos.. sem contar no carinho com minha irmã - que já presenciei inúmeras vezes. Por isso, esses dois possuem um lugar especial!',
       filiacao: 'Família do Noivo',
       class: 'paula-thi',
       rightAligned: false
@@ -321,7 +321,7 @@
       rightAligned: false
     },{
       name: 'Thiago Dutra e Mayte Balarini',
-      description: 'Thigo é o exemplo daquele primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação. ',
+      description: 'Thiga é o exemplo daquele primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação. ',
       filiacao: 'Família da Noiva',
       class: 'tiago-mayte',
       rightAligned: true
