@@ -39,6 +39,10 @@
 }
 
 
+body {
+  font-family: 'Alice', serif;
+}
+
 .timeline-frame-small {
   height: 20px;
   width: 20px;
@@ -111,10 +115,6 @@
   background: #ffffff url(imgs/igreja.jpg) no-repeat;
   background-position: 55%;
   background-size: 200px;
-}
-
-body {
-  font-family: 'Alice', serif;
 }
 
 a {
