@@ -26,6 +26,12 @@
   background-size: 120px;
 }
 
+.photo-frame .photo-holder.dani-escreve {
+  background: #ffffff url(imgs/dani-escreve.jpeg) no-repeat;
+  background-position: 0%;
+  background-size: 120px;
+}
+
 .quotes {
   position: relative;
   top: -5px;

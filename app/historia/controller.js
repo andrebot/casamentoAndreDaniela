@@ -65,19 +65,19 @@
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que a fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram mais de 3 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
+      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram mais de 3 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
       title: 'Desenrolar do Namoro',
       class: 'dani-lego',
       isRight: true,
       isLeft: false,
     },{
-      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximo - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento no dia em que os dois estavam completando os exatos 4 anos de namoro. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
+      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximo - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
       title: 'A Preparação',
       class: 'site',
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo, no final da brincadeira, um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
+      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo no final da brincadeira um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: true,

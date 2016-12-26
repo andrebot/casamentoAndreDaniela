@@ -8,7 +8,7 @@
 
     vm.padrinhos = [{
       name: 'Celso Peter e Cecília Mara',
-      description: 'Amizade que começou na faculdade e que se fortificou ainda mais com o passar do tempo. Ciça era minha parceira de trabalhos e estudos na sala de aula, minha dupla, e o Peter era aquele cara que sempre queria roubar minha dupla com a justificativa de que ela era namorada dele (rs). Cada um com seu jeito de ser, ela com uma paciência infindável (meta de vida!!!) e ele com o jeito brincalhão e divertido, me ensinaram várias coisas sobre relacionamento que eles nem imaginam..',
+      description: 'Amizade que começou na faculdade e que se fortificou ainda mais com o passar do tempo. Ciça era minha parceira de trabalhos e estudos na sala de aula, minha dupla, e o Peter era aquele cara que sempre queria roubar minha dupla com a justificativa de que ela era namorada dele (rs). Cada um com seu jeito de ser, ela com uma paciência infindável (meta de vida!!!) e ele com o jeito brincalhão e divertido, me ensinaram várias coisas sobre relacionamento e que eles nem imaginam..',
       filiacao: 'Amigos da Noiva',
       class: 'celso-ceci',
       rightAligned: true
@@ -32,7 +32,7 @@
       rightAligned: false
     },{
       name: 'Thiago Dutra e Mayte Balarini',
-      description: 'Thiga é o exemplo daquele primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação. ',
+      description: 'Thiga é o exemplo de primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação.',
       filiacao: 'Família da Noiva',
       class: 'tiago-mayte',
       rightAligned: true

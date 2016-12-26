@@ -240,19 +240,19 @@
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que a fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram mais de 3 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
+      text: $sce.trustAsHtml('Desde então o casal vem saindo, crescendo, aprendendo, brigando, fazendo as pazes, viajando... enfim, construindo um relacionamento juntos. Foram vários acontecimentos que fizeram com que o casal se conhecesse melhor e resultaram na relação que possuem hoje: uma relação pautada em companheirismo, sinceridade e amor. Foram mais de 3 anos até que André decidisse dar um passo adiante e pedir Daniela em casamento.'),
       title: 'Desenrolar do Namoro',
       class: 'dani-lego',
       isRight: true,
       isLeft: false,
     },{
-      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximo - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento no dia em que os dois estavam completando os exatos 4 anos de namoro. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
+      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximo - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
       title: 'A Preparação',
       class: 'site',
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo, no final da brincadeira, um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
+      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo no final da brincadeira um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: true,
@@ -297,7 +297,7 @@
 
     vm.padrinhos = [{
       name: 'Celso Peter e Cecília Mara',
-      description: 'Amizade que começou na faculdade e que se fortificou ainda mais com o passar do tempo. Ciça era minha parceira de trabalhos e estudos na sala de aula, minha dupla, e o Peter era aquele cara que sempre queria roubar minha dupla com a justificativa de que ela era namorada dele (rs). Cada um com seu jeito de ser, ela com uma paciência infindável (meta de vida!!!) e ele com o jeito brincalhão e divertido, me ensinaram várias coisas sobre relacionamento que eles nem imaginam..',
+      description: 'Amizade que começou na faculdade e que se fortificou ainda mais com o passar do tempo. Ciça era minha parceira de trabalhos e estudos na sala de aula, minha dupla, e o Peter era aquele cara que sempre queria roubar minha dupla com a justificativa de que ela era namorada dele (rs). Cada um com seu jeito de ser, ela com uma paciência infindável (meta de vida!!!) e ele com o jeito brincalhão e divertido, me ensinaram várias coisas sobre relacionamento e que eles nem imaginam..',
       filiacao: 'Amigos da Noiva',
       class: 'celso-ceci',
       rightAligned: true
@@ -321,7 +321,7 @@
       rightAligned: false
     },{
       name: 'Thiago Dutra e Mayte Balarini',
-      description: 'Thiga é o exemplo daquele primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação. ',
+      description: 'Thiga é o exemplo de primo que se encaixa perfeitamente no perfil de irmão. Aquele que, por mais que encha sua paciência, você admira e quer que participe de todos os momentos da sua vida. Maytê, esposa de Thiago, entrou na nossa relação (rs!) e se encaixou perfeitamente. Divertida, inteligente... é um exemplo de pessoa tranquila e dedicada. Ela, juntamente com Thiago, são, e sempre serão, meus parceiros de praia, de férias, de conselhos e de zuação.',
       filiacao: 'Família da Noiva',
       class: 'tiago-mayte',
       rightAligned: true
