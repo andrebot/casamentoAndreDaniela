@@ -246,19 +246,19 @@
       isRight: true,
       isLeft: false,
     },{
-      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximo - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
+      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximos - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
       title: 'A Preparação',
       class: 'site',
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo no final da brincadeira um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
+      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo no final da brincadeira um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá ele a pediu em casamento!'),
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: true,
       isLeft: false,
     }, {
-      text: $sce.trustAsHtml('O pediu resultou neste exato momento: a espera ansiosa pelo dia 28 de Abril de 2017! O casamento será celebrado na presença de Deus na Paróquia Santo Inácio de Loyola localizada na cidade de Belo Horizonte/Minas Gerais.'),
+      text: $sce.trustAsHtml('O pedido resultou neste exato momento: a espera ansiosa pelo dia 28 de Abril de 2017! O casamento será celebrado na presença de Deus na Paróquia Santo Inácio de Loyola localizada na cidade de Belo Horizonte/Minas Gerais.'),
       title: 'O Dia',
       class: 'igreja',
       isRight: false,
@@ -303,7 +303,7 @@
       rightAligned: true
     },{
       name: 'Paula Botelho e Thiago Lins',
-      description: 'É mais do que óbvio que esse casal estaria aqui! Paula é minha irmã de sangue e de coração. Infelizmente, quando morávamos juntos eu a enlouquecia! Tocava violão às 23hrs, gritava no meu quarto quando estava jogando no computador, escutava televisão em um volume muito alto pra ela... ou seja, fazia de tudo para perturbar a paz que ela tinha em casa. Mas, contudo, porém, entretanto, todavia.. ainda assim conseguimos ter espaços nos nossos corações para compatilhar um amor só nosso (mesmo que eu suma de vez enquando, viu, Paula?!). Thiago foi aquele cara cabeludo e de camisa hippie que apareceu lá em casa uma vez. Eu lembro até hoje você me pedindo pra ver o GTA Vice City que eu estava jogando naquela hora. Pois bem, o Thiago conseguiu mais do que meu respeito demonstrando um crescimento incrível com o passar dos anos.. sem contar no carinho com minha irmã - que já presenciei inúmeras vezes. Por isso, esses dois possuem um lugar especial!',
+      description: 'É mais do que óbvio que esse casal estaria aqui! Paula é minha irmã de sangue e de coração. Infelizmente, quando morávamos juntos eu a enlouquecia! Tocava violão às 23hrs, gritava no meu quarto quando estava jogando no computador, escutava televisão em um volume muito alto pra ela... ou seja, fazia de tudo para perturbar a paz que ela tinha em casa. Mas, contudo, porém, entretanto, todavia.. ainda assim conseguimos ter espaços nos nossos corações para compatilhar um amor só nosso (mesmo que eu suma de vez em quando, viu, Paula?!). Thiago foi aquele cara cabeludo e de camisa hippie que apareceu lá em casa uma vez. Eu lembro até hoje você me pedindo pra ver o GTA Vice City que eu estava jogando naquela hora. Pois bem, o Thiago conseguiu mais do que meu respeito demonstrando um crescimento incrível com o passar dos anos.. sem contar no carinho com minha irmã - que já presenciei inúmeras vezes. Por isso, esses dois possuem um lugar especial!',
       filiacao: 'Família do Noivo',
       class: 'paula-thi',
       rightAligned: false
@@ -339,7 +339,7 @@
       rightAligned: true
     },{
       name: 'Anna Gusmão',
-      description: 'Prima birutinha! Anna sempre foi a prima travessa da família. Sempre energética e de sorriso fácil, ela é um exemplo de pessoa de bom coração e esforçada. A Anna, para mim, é uma prova de que podemos sim estar sempre alegres e de bom humor independente do que seja. E essa sensação que eu gostaria de nunca perder. Dessa forma, gostaria muito que você, Anna, trouxesse essa energia positiva para mim e Daniela, agraciando nossa união.',
+      description: 'Prima birutinha! Anna sempre foi a prima travessa da família. Sempre energética e de sorriso fácil, ela é um exemplo de pessoa de bom coração e esforçada. A Anna, para mim, é uma prova de que podemos estar sim sempre alegres e de bom humor independente do que seja. E essa sensação que eu gostaria de nunca perder. Dessa forma, gostaria muito que você, Anna, trouxesse essa energia positiva para mim e Daniela, agraciando nossa união.',
       filiacao: 'Família do Noivo',
       class: 'anna',
       rightAligned: false
