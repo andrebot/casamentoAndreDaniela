@@ -12,7 +12,10 @@
     var apiKey = 'AIzaSyB_dMEBT5lOT8BQlaPA5HRez0ZMWQln_3s';
     var databaseURL = 'https://weddingsite-a7b7e.firebaseio.com';
 
-    firebase.initializeApp({apiKey,databaseURL});
+    firebase.initializeApp({
+      apiKey: apiKey,
+      databaseURL: databaseURL
+    });
 
     $urlRouterProvider.otherwise('/');
 
