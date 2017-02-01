@@ -20,7 +20,6 @@
   margin: -25px 0 0 -25px;
 }
 
-
 .photo-frame .photo-holder.andre-escreve {
   background: #ffffff url(imgs/andre-escreve.jpg) no-repeat;
   background-position: 20%;
@@ -44,6 +43,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 
 body {
   font-family: 'Alice', serif;

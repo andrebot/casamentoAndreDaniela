@@ -71,19 +71,19 @@
       isRight: true,
       isLeft: false,
     },{
-      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximo - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
+      text: $sce.trustAsHtml('Após 3 anos e meio de relacionamento, em Dez de 2015, André começou a bolar um plano que iria mudar a vida do casal! Aproveitado de suas FANTÁSTICAS habilidades de programador, André criou um site (com uma espécie de gincana) para que Daniela seguisse diversas pistas - que estavam com seus amigos e familiares mais próximos - e desvendasse várias charadas para que enfim recebesse o seu prêmio final: o pedido de casamento. Ele tinha planejado tudo cuidadosamente para que sua futura noiva passasse um dia inteiro brincando e se divertindo com o momento.'),
       title: 'A Preparação',
       class: 'site',
       isRight: false,
       isLeft: true,
     },{
-      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo no final da brincadeira um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá a pediu em casamento!'),
+      text: $sce.trustAsHtml('Então, quando o dia 2 de Maio de 2016 chegou, André acordou cedo, ligou para Daniela e a brincadeira começou! É claro, como os mais astutos de vocês já pensaram, Daniela conseguiu acabar com o jogo inteiro em menos de 3 horas!, recebendo no final da brincadeira um aviso de que seu namorado iria levá-la para jantar e, sem que ela desconfiasse, André a levou para o mesmo restaurante onde o casal teve seu primeiro encontro e lá ele a pediu em casamento!'),
       title: 'O Pedido!',
       class: 'pedido-casamento',
       isRight: true,
       isLeft: false,
     }, {
-      text: $sce.trustAsHtml('O pediu resultou neste exato momento: a espera ansiosa pelo dia 28 de Abril de 2017! O casamento será celebrado na presença de Deus na Paróquia Santo Inácio de Loyola localizada na cidade de Belo Horizonte/Minas Gerais.'),
+      text: $sce.trustAsHtml('O pedido resultou neste exato momento: a espera ansiosa pelo dia 28 de Abril de 2017! O casamento será celebrado na presença de Deus na Paróquia Santo Inácio de Loyola localizada na cidade de Belo Horizonte/Minas Gerais.'),
       title: 'O Dia',
       class: 'igreja',
       isRight: false,
