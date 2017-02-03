@@ -22,7 +22,7 @@
       <ng-repeat ng-repeat="marco in vm.marcos">
 
         <div layout="column" layout-align="center center">
-          <div flex=none layout="row" layout-margin layout-padding layout-align="center center">
+          <div flex=none layout="row" layout-margin layout-padding layout-align="center center" class="full-width">
             <div flex ng-if="marco.isRight" hide-xs></div>
             <div flex class="timeline-text" ng-if="marco.isLeft" hide-xs ng-bind-html="marco.text">
             </div>
